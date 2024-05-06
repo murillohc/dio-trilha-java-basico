@@ -1,6 +1,9 @@
-import java.util.Comparator;
 import java.util.Objects;
 
+/**
+ *
+ * @author muril
+ */
 public class Aluno implements Comparable<Aluno> {
     private String nome;
     private double media;
@@ -47,15 +50,5 @@ public class Aluno implements Comparable<Aluno> {
         return nome.compareTo(aluno.getNome());
     }
 
-    class ComparatorNota implements Comparator<Aluno> {
-        @Override
-        public int compare(Aluno o1, Aluno o2) {
-          return Double.compare(o1.getMedia(), o2.getMedia());
-        }
     
-
-    
-
-
-}
 }

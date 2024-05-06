@@ -1,4 +1,5 @@
 
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
@@ -40,7 +41,7 @@ public class GerenciadorAluno {
             }
         }
         public void exibirAlunosPorNota() {
-            Set<Aluno> alunosPorNota = new TreeSet<>(new ComparatorNota());
+            Set<Aluno> alunosPorNota = new TreeSet<>();
             if (!alunoSet.isEmpty()) {
               alunosPorNota.addAll(alunoSet);
               System.out.println(alunosPorNota);
